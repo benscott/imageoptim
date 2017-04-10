@@ -50,7 +50,7 @@ Resize an image to power of 2 (optimised for THREE.WebGLRenderer)
     img.save(NEW_FILE)
 
 
-You can also use a callback (for async sort of stuff)
+You can also use a callback (for async stuff)
 
     image_optim = ImageOptim()
 
