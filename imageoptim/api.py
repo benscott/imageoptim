@@ -9,9 +9,10 @@ import math
 import requests
 from PIL import Image
 
-API_ENDPOINT = 'https://im2.io'
-
 class ImageOptimAPI():
+
+  endpoint = 'https://im2.io'
+
   def __init__(self, username):
     self.username = username
 
@@ -80,7 +81,7 @@ class ImageOptimAPI():
   def _url(self, options, file_url=None):
     # Helper function - build URL from parts
     url_parts = [
-      API_ENDPOINT,
+      self.endpoint,
       self.username,
       self.parse_options(options)
     ]
